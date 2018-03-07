@@ -31,10 +31,16 @@ public class main {
 			arrayInt[i] = i + 10;
 		}
 
-		/*
-		 * for (int i = 0; i < arrayInt.length; i++) {
-		 * System.out.println(String.valueOf(arrayInt[i])); // arrayObjectAndInit[i] }
-		 */
+		for (int i = 0; i < arrayInt.length; i++) {
+			System.out.println(String.valueOf(arrayInt[i]));
+			// arrayObjectAndInit[i]
+			// System.out.println(arrayInt.toString());
+		}
+
+		for (int i : arrayInt) {
+			System.out.println(String.valueOf(i));
+			//System.out.println(i + "");
+		}
 
 		// cách khai báo mảng 2
 		int[] arrayInt1;
@@ -55,22 +61,24 @@ public class main {
 		for (int i = 0; i < arrayObjectAndInit.length; i++) {
 			// System.out.println(String.valueOf(arrayObjectAndInit[i]));
 
-			//System.out.println(arrayObjectAndInit[i].toString());
-			//System.out.println(caculate("xin chao", " lop java"));
+			// System.out.println(arrayObjectAndInit[i].toString());
+			// System.out.println(caculate("xin chao", " lop java"));
 		}
+		// cách khai báo kèm khởi tạo mảng
+		int[] years = new int[] { 2001, 1994, 1995, 2000, 2017 };
 
 	}
 
-	 /**
-	 * @description: hahajdkjnjdnsdnmdmk 
+	/**
+	 * @description: caculate , concat two args.
 	 * @author: Admin CMC Corporation
 	 * @create_date: Mar 7, 2018
 	 * @modifier: Admin
 	 * @modifined_date: Mar 7, 2018
-	 * @exception: 
+	 * @exception:
 	 * @param x
 	 * @param y
-	 * @return String , concat two args
+	 * @return String
 	 */
 	public static String caculate(String x, String y) {
 		return x + y;
