@@ -3,6 +3,9 @@
  */
 package main.start;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 /**
  * @description:
  * @author: Admin
@@ -20,7 +23,7 @@ public class main {
 	 * @exception:
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void main1(String[] args) {
 		//
 		int number;
 		// cách khai báo mảng 1
@@ -30,16 +33,16 @@ public class main {
 		for (int i = 0; i < arrayInt.length; i++) {
 			arrayInt[i] = i + 10;
 		}
-
+		System.out.println(Arrays.toString(arrayInt));
 		for (int i = 0; i < arrayInt.length; i++) {
-			System.out.println(String.valueOf(arrayInt[i]));
+			// System.out.println(String.valueOf(arrayInt[i]));
 			// arrayObjectAndInit[i]
-			// System.out.println(arrayInt.toString());
+
 		}
 
 		for (int i : arrayInt) {
-			System.out.println(String.valueOf(i));
-			//System.out.println(i + "");
+			// System.out.println(String.valueOf(i));
+			// System.out.println(i + "");
 		}
 
 		// cách khai báo mảng 2
@@ -66,7 +69,24 @@ public class main {
 		}
 		// cách khai báo kèm khởi tạo mảng
 		int[] years = new int[] { 2001, 1994, 1995, 2000, 2017 };
+		int[] years1 = new int[] { 2001, 1994, 1995, 2000, 2017 };
+		for (int i : years) {
+			// System.out.println(String.valueOf(i));
+			// System.out.println(i + "");
+		}
+		System.out.println("**************");
 
+		Arrays.sort(years);
+		for (int i : years) {
+
+			// System.out.println(String.valueOf(i));
+			// System.out.println(i + "");
+		}
+		// boolean tự ép kiểu về string
+		// System.out.println("ket qua so sanh year va years1: "+ Arrays.equals(years,
+		// years1));
+		// System.out.println("ket qua so sanh year va years: "+ Arrays.equals(years,
+		// years));
 	}
 
 	/**
