@@ -12,7 +12,7 @@ import java.util.Arrays;
  * @time: 7:48:07 PM
  * @date: Mar 7, 2018
  */
-public class main {
+public class Main {
 
 	/**
 	 * @description:
